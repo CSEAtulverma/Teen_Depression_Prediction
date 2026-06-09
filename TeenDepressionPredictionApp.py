@@ -23,10 +23,7 @@ daily_social_media_hours = st.slider(
 
 # 0.0 = min value , 15.0 max value , 5.0 = default value
 
-platform_usage = st.selectbox(
-    "Platform Usage",
-    ["Instagram", "TikTok" , "Both"]
-)
+
 
 # first value serves as a default value (eg = instagram)
 
@@ -50,10 +47,6 @@ physical_activity = st.slider(
     1,10,5
 )
 
-social_interaction_level = st.slider(
-    "Social Interaction Level",
-    1,10,5
-)
 
 stress_level = st.slider(
     "Stress Level",
@@ -70,7 +63,20 @@ addiction_level = st.slider(
     1,10,5
 )
 
+
+platform_usage = st.selectbox(
+    "Platform Usage",
+    ["Instagram", "TikTok" , "Both"]
+)
+
+social_interaction_level = st.selectbox(
+    "Social Interaction Level",
+    ["High"  , "Medium" , " Low"]  
+)
+
 # Simple Encoding
+
+# 'gender', 'platform_usage', 'social_interaction_level'
 
 gender = 1 if gender == "Male" else 0
 
@@ -79,6 +85,14 @@ platform_dict = {
     "TikTok" : 1,
     "Both" : 2
 }
+
+social_interaction_dict = {
+    "High" : 0,
+    "Low" : 1,
+    "Medium" : 2
+}
+
+social_interaction_level = social_interaction_dict[social_interaction_level]
 
 platform_usage = platform_dict[platform_usage]
 
