@@ -87,9 +87,11 @@ platform_dict = {
 }
 
 social_interaction_dict = {
-    "High" : 2,
     "Low" : 0,
-    "Medium" : 1
+    "Medium" : 1,
+    "High" : 2,
+    
+    
 }
 
 social_interaction_level= social_interaction_dict[social_interaction_level]
