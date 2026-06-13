@@ -33,7 +33,7 @@ sleep_hours = st.slider(
 )
 
 screen_time_before_sleep = st.slider(
-    "Sleep Hours",
+    "Screen Time Before Sleep (Hours)",
     0.0 , 5.0 , 1.0
 )
 
