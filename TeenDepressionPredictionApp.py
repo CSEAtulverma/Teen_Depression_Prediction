@@ -71,7 +71,7 @@ platform_usage = st.selectbox(
 
 social_interaction_level = st.selectbox(
     "Social Interaction Level",
-    ["High"  , "Medium" , " Low"]  
+    ["High"  , "Medium" , "Low"]  
 )
 
 # Simple Encoding
